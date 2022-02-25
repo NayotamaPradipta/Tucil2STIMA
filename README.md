@@ -19,3 +19,7 @@ Repositori ini berisi folder berupa: <br>
 2. doc - Dokumentasi, Screenshot dan Laporan Tugas Kecil
 3. src - Kode Program
 4. test - Dataset berlabel untuk testing
+
+<br>
+
+### Nayotama Pradipta - 13520089
