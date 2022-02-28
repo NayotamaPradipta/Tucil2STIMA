@@ -1,0 +1,4 @@
+Dataset yang diuji adalah:
+1. Petal Dataset
+2. Sepal Dataset
+3. Breast Cancer 
