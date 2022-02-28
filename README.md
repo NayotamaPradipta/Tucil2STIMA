@@ -22,4 +22,19 @@ Repositori ini berisi folder berupa: <br>
 
 <br>
 
+## Program Requirement <hr>
+Program ini dapat dijalankan menggunakan python3. Terdapat beberapa module/package yang harus diinstall terlebih dahulu, caranya dengan menuliskan prompt sebagai berikut: 
+```shell
+pip install numpy
+pip install matplotlib
+pip install scipy
+pip install sklearn
+pip install pandas 
+```
+
+## Langkah Kompilasi Program <hr>
+Program dapat dikompilasi pada virtual environment, apabila menggunakan IDE Microsoft Visual Studio Code, caranya hanya melakukan run terhadap main.py yang terdapat di src
+
+
+
 ### Nayotama Pradipta - 13520089
