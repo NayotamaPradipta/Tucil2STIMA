@@ -2,7 +2,7 @@
 import numpy as np 
 import math
 from collections import Iterable
-from sklearn.exceptions import ConvergenceWarning
+
 def determinantThreePoints(p1, p2, pi):
     # Mengembalikan determinan dari tiga titik koordinat
     return (p1[0] * p2[1] + pi[0] * p1[1] + p2[0] * pi[1] - pi[0] * p2[1] - p2[0] * p1[1] - p1[0] * pi[1])
@@ -25,6 +25,7 @@ def getExtremeRightPoint(bucket):
     maxXval = max(bucket[:, 0])
     maxXidx = np.where(bucket[:,0] == maxXval)
     return bucket[maxXidx]
+
 
 def getOuterUpPoints(p1, p2, bucket):
     arrOfOuterPoints = np.zeros((len(bucket),2))
@@ -55,6 +56,8 @@ def getDistance(p1, p2, p3):
 def getAngle(a, b, c):
     ang = math.degrees(math.atan2(c[1]-b[1], c[0]-b[0]) - math.atan2(a[1]-b[1], a[0]-b[0]))
     return ang + 360 if ang < 0 else ang
+
+
 
 def getMaxPoint(p1, p2, point):
     # Inisialisasi array untuk menyimpan jarak semua titik
@@ -114,8 +117,6 @@ def myConvexHull(bucket):
         temp.append(arrOfPoints[i])
     newtemp = convertToLinear(temp)
     newtemp = [i for i in newtemp if i != 0]
-    newtemp.pop(len(newtemp) - 1)
-    newtemp.pop(len(newtemp) - 1)
     coordinate = []
 
     k = 0
